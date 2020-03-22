@@ -1,0 +1,168 @@
+/* ========================================
+
+    Facebook Style Button
+
+====================================== */
+
+.facebook-style-btn {
+    border-radius: 2px;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+}
+
+.facebook-style-dark {
+    -moz-box-shadow:    inset 0 1px 0 0 #4d73bf;
+    -webkit-box-shadow: inset 0 1px 0 0 #4d73bf;
+    box-shadow:        inset 0 1px 0 0 #4d73bf;
+    background: #4267b2;
+    border: solid 1px #4267b2;
+    color: white;
+    text-shadow: 0 1px 0 #3359a5;
+}
+    .facebook-style-dark:hover {
+        background: #2b54a7;
+    }
+    .facebook-style-dark:active {
+        background: #2b54a7;
+        border-color: #1d4698;
+    }
+
+.facebook-style-light {
+    background: #f6f7f9;
+    border: solid 1px #ced0d4;
+    color: #4b4f56;
+}
+    .facebook-style-light:hover{
+        background: #e9ebee;
+    }
+    .facebook-style-light:active{
+        background: #d8dade;
+        border-color: #d8dade;
+    }
+
+/* ========================================
+    3D BUTTON 1
+====================================== */
+
+.btn-3d-1 {
+    position: relative; 
+    background: orangered;
+    border: none;
+    color: white;
+    padding: 14px 24px;
+    font-size: 1rem;
+    box-shadow: -6px 6px 0 hsl(16,100%, 30%);
+    outline: none;
+}
+    .btn-3d-1:hover{
+        background: hsl(16,100%, 45%);
+    }
+
+    .btn-3d-1:active{
+        background: hsl(16,100%, 40%);
+        top: 3px;
+        left: -3px;
+        box-shadow: -3px 3px 0 hsl(16,100%, 30%);
+    }
+
+    .btn-3d-1::before {
+        display: block;
+        position: absolute;
+        content: '';
+        height: 0;
+        width: 0;
+
+        border: solid 6px transparent;
+        border-right: solid 6px hsl(16,100%, 30%);
+        left: -12px;
+        top: 0px;
+    }
+
+    .btn-3d-1::after {
+        display: block;
+        position: absolute;
+        content: 'Lolffffffffffff';
+        height: 0;
+        width: 0;
+
+        border: solid 6px transparent;
+        border-top: solid 6px hsl(16,100%, 30%);
+        right: 1px;
+        bottom: -12px;
+    }
+
+    .btn-3d-1:active::before{
+        border: solid 3px transparent;
+        border-right: solid  3px hsl(16,100%, 30%);
+        border-left-width:0px;
+        left: -3px;
+    }
+
+    .btn-3d-1:active::after{
+        border: solid 3px transparent;
+        border-top: solid  3px hsl(16,100%, 30%);
+        border-bottom-width: 0px;
+        bottom: -3px;
+    }
+
+.btn-3d-1-a {
+    background: orangered;
+    position: relative;
+    border: none;
+    color: white;
+    padding: 14px 24px;
+    font-size: 1rem;
+    box-shadow: 6px 6px 0 hsl(16,100%, 30%);
+    outline: none;
+}
+    .btn-3d-1-a:hover{
+        background: hsl(16,100%, 45%);
+    }
+
+    .btn-3d-1-a:active{
+        background: hsl(16,100%, 40%);
+        top: 3px;
+        right: -3px;
+        box-shadow: 3px 3px 0 hsl(16,100%, 30%);
+    }
+
+    .btn-3d-1-a::after{
+        display: block;
+        position: absolute;
+        content: '';
+        height: 0;
+        width: 0;
+
+        border: solid 6px transparent;
+        border-top: solid 6px hsl(16,100%, 30%);
+        bottom: -12px;
+        left: 0px;
+    }
+
+    .btn-3d-1-a:active::after{
+        border: solid 3px transparent;
+        border-top: solid 3px hsl(16,100%, 30%);
+        border-top-width: 3px ;
+        bottom : -6px;
+        left: 0px;
+    }
+
+    .btn-3d-1-a::before{
+        content: '';
+        display: block;
+        position: absolute;
+        height: 0;
+        width: 0;
+
+        border: solid 6px transparent;
+        border-left: solid 6px hsl(16,100%, 30%);
+        right: -12px;
+        top: 0px;
+    }
+
+    .btn-3d-1-a:active::before{
+        border: solid 3px transparent;
+        border-left: solid 3px hsl(16,100%, 30%);
+        border-left-width: 3px;
+        right: -6px;
+    }
