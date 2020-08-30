@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex direction</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    .container1{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid rgb(131, 128, 128);
+        width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: row-reverse;
+        border: 1px solid rgb(131, 128, 128);
+        width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .container3{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgb(131, 128, 128);
+        width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .container4{
+        display: flex;
+        flex-direction: column-reverse;
+        border: 1px solid rgb(131, 128, 128);
+        width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .item1{
+        background-color: red;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black;
+    }
+    .item2{
+        background-color: green;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black;
+    }
+    .item3{
+        background-color: yellow;
+        color: black;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black;
+    }
+    .item4{
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black;
+    }
+
+    .code{
+        font-family: monospace;
+    }
+</style>
+<body>
+    <ul>
+        <li> When we put container as a Flex then it by default align it's items (both inline and block) to the X-axis.</li>
+        <li> Flex direction is property for the parent container not the child elements for the container.</li>
+        <li>Properties : row, row-reverse, column, column-reverse</li>
+    </ul>
+
+    <h3 class="code">flex-direction: row;</h3>
+
+    <div class="container1">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+    </div>
+
+    <h3 class="code">flex-direction: row-reverse;</h3>
+
+    <div class="container2">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+    </div>
+
+    <h3 class="code">flex-direction: column;</h3>
+
+    <div class="container3">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+    </div>
+
+    <h3 class="code">flex-direction: column-reverse;</h3>
+
+    <div class="container4">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+    </div>
+</body>
+</html>

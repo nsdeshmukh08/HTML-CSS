@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex justify-content</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    .container{
+        display: flex;
+        justify-content: flex-end;
+        border: 1px solid black;
+        width: 400px;
+    }
+
+    .container1{
+        display: flex;
+        justify-content: flex-start;
+        border: 1px solid black;
+        width: 400px;
+    }
+
+    .container2{
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        width: 400px;
+    }
+
+    .item1{
+        background-color: red;
+        color: white;
+        border: 1px solid black;
+    }
+    .item2{
+        background-color: green;
+        color: white;
+        border: 1px solid black;
+    }
+    .item3{
+        background-color: yellow;
+        color: black;
+        border: 1px solid black;
+    }
+    .item4{
+        background-color: blue;
+        color: white;
+        border: 1px solid black;
+    }
+
+    .code{
+        font-family: monospace;
+    }
+</style>
+<body>
+
+    Justify content is used for arranging the content of the Flex.
+
+    <h3 class="code"> justify-content: flex-end;</h3>
+    <div class="container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+    </div>
+
+    <h3 class="code"> justify-content: flex-start;</h3>
+    <div class="container1">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+    </div>
+
+    <h3 class="code"> justify-content: center;</h3>
+    <div class="container2">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+    </div>
+</body>
+</html>

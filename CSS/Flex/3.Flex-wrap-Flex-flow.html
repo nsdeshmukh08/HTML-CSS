@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex wrap and Flex flow</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    .container1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:nowrap;
+        border: 1px solid rgb(131, 128, 128);
+        width: 400px; 
+        margin-bottom: 20px;
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        border: 1px solid rgb(131, 128, 128);
+        width: 400px; 
+        margin-bottom: 20px;
+    }
+
+    .container3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap-reverse;
+        border: 1px solid rgb(131, 128, 128);
+        width: 400px; 
+        margin-bottom: 20px;
+    }
+
+    .container4{
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        border: 1px solid rgb(131, 128, 128);
+        width: 400px; 
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    .container5{
+        display: flex;
+        flex-flow: column  wrap-reverse;
+        border: 1px solid rgb(131, 128, 128);
+        width: 400px; 
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .item1{ background-color: red; }
+    .item2{ background-color: green; }
+    .item3{ background-color: yellow; }
+    .item4{ background-color: blue; }
+    .item5{ background-color: skyblue; }
+    .item6{ background-color: #ff3c00; }
+    .item7{ background-color: brown; }
+
+
+    .item{
+        color: black;
+        padding: 15px;
+        margin: 10px;
+        border: 1px solid black;
+    }
+
+    .code{
+        font-family: monospace;
+    }
+</style>
+<body>
+    <ul>
+        <li> Wrap is important to wrap the overflow content.</li>
+    </ul>
+
+    <h3 class="code">flex-wrap: nowrap;</h3>
+
+    <div class="container1">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+        <div class="item item5">Item 5</div>
+        <div class="item item6">Item 6</div>
+        <div class="item item7">Item 7</div>
+        <div class="item item8">Item 8</div>  
+    </div>
+
+    <h3 class="code"> flex-direction: row; flex-wrap: wrap; </h3>
+
+    <div class="container2">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+        <div class="item item5">Item 5</div>
+        <div class="item item6">Item 6</div>
+        <div class="item item7">Item 7</div>
+        <div class="item item8">Item 8</div>  
+    </div>
+
+    <h3 class="code"> flex-direction: row; flex-wrap: wrap-reverse; </h3>
+
+    <div class="container3">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+        <div class="item item5">Item 5</div>
+        <div class="item item6">Item 6</div>
+        <div class="item item7">Item 7</div>
+        <div class="item item8">Item 8</div>  
+    </div>
+
+    <h3 class="code"> flex-direction: column; flex-wrap: wrap; </h3>
+
+    <div class="container4">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+        <div class="item item5">Item 5</div>
+        <div class="item item6">Item 6</div>
+        <div class="item item7">Item 7</div>
+        <div class="item item8">Item 8</div>  
+    </div>
+
+    <h3 class="code"> flex-direction: column; flex-wrap: wrap-reverse; </h3>
+    <h3 class="code"> flex-flow: column  wrap-reverse, </h3>
+
+    <div class="container5">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+        <div class="item item5">Item 5</div>
+        <div class="item item6">Item 6</div>
+        <div class="item item7">Item 7</div>
+        <div class="item item8">Item 8</div>  
+    </div>
+</body>
+</html>
