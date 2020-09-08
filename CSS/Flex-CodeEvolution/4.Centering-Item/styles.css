@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  border: 2px solid black;
+  width: 500px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  border: 5px solid green;
+  padding: 50px;
+  text-align: center;
+}
